@@ -19,6 +19,7 @@
       <%= f.password_field :password_confirmation, autocomplete: "off", class:'form-control' %>
    </div>
    
+   <!-- uses label_tag because the data will be shipped off to e-commerce platform -->
    <div class="form-group">
       <%= label_tag :card_number, "Credit Card Number" %>
       <%= text_field_tag :card_number, nil, name: nil, class: "form-control" %>
