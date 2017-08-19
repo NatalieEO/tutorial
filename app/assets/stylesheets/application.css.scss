@@ -46,7 +46,7 @@
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li >  a {
   color: white;
-  &:hover {
+  &:hover, &:focus {
     color: white;
     opacity: 0.75;
   }
@@ -58,7 +58,7 @@
 
 .navbar-default .navbar-toggle {
   border: 2px solid white;
-  &:hover, &focus {
+  &:hover, &:focus {
     background-color: #000046;
     opacity: 0.75;
   }
@@ -71,6 +71,10 @@
   margin-top: -20px;
   padding-top: 50px;
   padding-bottom: 100px;
+}
+
+.alert-notice {
+  display: none;
 }
 
 
