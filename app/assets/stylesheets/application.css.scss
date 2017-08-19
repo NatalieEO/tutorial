@@ -43,6 +43,7 @@
   font-weight: 800;
 }
 
+//targets the devmatch brand/text and About, Contact Us
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li >  a {
   color: white;
@@ -52,10 +53,12 @@
   }
 }
 
+//small bars in navigation button. Only on smaller screen
 .navbar-default .navbar-toggle .icon-bar {
   background-color: white;
 }
 
+//navigation button that appears on smaller screen
 .navbar-default .navbar-toggle {
   border: 2px solid white;
   &:hover, &:focus {
