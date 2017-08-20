@@ -1,5 +1,7 @@
 class Users::RegistrationsController < Devise::RegistrationsController
-   #inherit parent create action and extend it. Before it saves user, do following
+   # Extend default Devise gem behaviour so that users signing up
+   # with a Pro account (plan ID 2) save with a special Stripe
+   # subscription function.   Otherwise Devise signs up user as usual.
    def create
       super do |resource|
          #checks if there is a parameter called plan somewhere in the URL
