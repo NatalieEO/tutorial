@@ -3,6 +3,7 @@
    
    <%= hidden_field_tag 'plan', params[:plan] %>
    
+   <!-- f. -> refers to form for the resource(user) -->
    <div class="field form-group">
       <%= f.label :email %><br />
       <%= f.email_field :email, autofocus: true, class: 'form-control' %>
@@ -21,7 +22,10 @@
       <%= f.password_field :password_confirmation, autocomplete: "off", class:'form-control' %>
    </div>
    
-   <!-- uses label_tag because the data will be shipped off to e-commerce platform -->
+   <!-- uses label_tag because the data will be shipped off to e-commerce platform 
+   Giving name with value nil means it won't save to our database. Also need to use generic
+   form tags
+   -->
    <div class="form-group">
       <%= label_tag :card_number, "Credit Card Number" %>
       <%= text_field_tag :card_number, nil, name: nil, class: "form-control" %>
